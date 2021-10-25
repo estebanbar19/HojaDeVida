@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Formato Único Hoja de Vida</title>
+</head>
+<body>
+    <div id="contenedorHoja">
+        <header>
+            <img src="img/escudo_colombia_1.png" alt="Escudo de Colombia">
+            <div id="textoCentral">
+                <h3>FORMATO ÚNICO</h3>
+                <h1>HOJA DE VIDA</h1>
+                <h4>Persona Natural</h4>
+                <h6>(Leyes 190 de 1995, 489 y 443 de 1998)</h6>
+            </div>
+            <div id="entidadReceptoraSection">
+                <h6>ENTIDAD RECEPTORA</h6>
+                <input type="text" name="entidadReceptora">
+            </div>
+        </header>
+        <main>
+            <div class="divisorContenedores"><label class="labelSubtitulo">1</label><hr><label class="labelSubtitulo1">DATOS PERSONALES</label></div>
+            <div id="contenedorDatosPersonales">
+                <div class="row">
+                    <div class="box">
+                        <label class="label" for="primerApellido">PRIMER APELLIDO</label>
+                        <input type="text" name="Primer Apellido" id="primerApellido">
+                    </div>
+                    <div class="box">
+                        <label class="label" for="segundoApellido">SEGUNDO APELLIDO ( O DE CASADA )</label>
+                        <input type="text" name="Segundo Apellido" id="segundoApellido">
+                    </div>
+                    <div class="box">
+                        <label class="label" for="nombres">NOMBRES</label>
+                        <input type="text" name="Nombres" id="nombres">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box">
+                        <label class="label" for="numeroIdentificacion">DOCUMENTO DE IDENTIFICACIÓN</label>
+                        <div class="subbox1">
+                            <label class="sublabel" for="cc">  C.C  <input type="radio" name="tpDocumento" id="cc"></label>
+                            <label class="sublabel" for="ce">  C.E  <input type="radio" name="tpDocumento" id="ce"></label>
+                            <label class="sublabel" for="pas">  PAS  <input type="radio" name="tpDocumento" id="pas"></label>
+                            <label class="sublabel" for="numeroIdentificacion"> No.<input class="ipt2" type="text" name="numeroId" id="numeroIdentificacion"></label>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <label class="label" for="numeroIdentificacion">SEXO</label>
+                        <div class="subbox2">
+                            <label class="sublabel" for="female" id="lbFemale">  F  <input type="radio" name="sexo" id="female"></label>
+                            <label class="sublabel" for="male" id="lbMale">  M  <input type="radio" name="sexo" id="male"></label>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="subbox">
+                            <label class="label" for="naCol">NACIONALIDAD</label>
+                            <label id="nacionalidadPais" class="label" for="naPais">PAÍS</label>
+                        </div>
+                        <div class="subbox1">
+                            <label class="sublabel" for="naCol">COL. <input type="radio" name="nacionalidad" id="naCol"></label>
+                            <label class="sublabel" for="naExt">EXTRANJERO <input type="radio" name="nacionalidad" id="naExt"></label>
+                            <input class="ipt2" type="text" name="naPais" id="naPais">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box">
+                        <label class="label">LIBRETA MILITAR</label>
+                        <div class="subbox1">
+                            <label class="sublabel" for="priClase">PRIMERA CLASE <input type="radio" name="priClase" id="priClase"></label>
+                            <label class="sublabel" for="segClase">SEGUNDA CLASE <input type="radio" name="segClase" id="segClase"></label>
+                            <label class="sublabel" for="numeroLibretaMilitar">NÚMERO <input class="ipt2" type="text" name="numeroLM" id="numeroLibretaMilitar"></label>
+                            <label class="sublabel" for="dmLibretaMilitar">D.M <input class="ipt2" type="text" name="dmLM" id="dmLibretaMilitar"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box" id="fechaNacimiento">
+                        <label class="label">FECHA Y LUGAR DE NACIMIENTO</label>
+                        <div class="subbox">
+                            <label class="sublabel" for="fechaNacimiento">FECHA</label>
+                            <label class="sublabel">DÍA<input class="ipt3" type="text" name="diaNacimiento" id="diaNacimiento"></label>
+                            <label class="sublabel">MES<input class="ipt3" type="text" name="mesNacimiento" id="mesNacimiento"></label>
+                            <label class="sublabel" id="anioNac">AÑO<input class="ipt3" type="text" name="anioNacimiento" id="anioNacimiento"></label>
+                        </div>
+                        <div class="subbox">
+                            <label class="sublabel" for="paisNacimiento">PAÍS  </label>
+                            <input class="ipt2" type="text" name="paisNacimiento" id="paisNacimiento">
+                        </div>
+                        <div class="subbox">
+                            <label class="sublabel" for="deptoNacimiento">DEPTO  </label>
+                            <input class="ipt2" type="text" name="deptoNacimiento" id="deptoNacimiento">
+                        </div>
+                        <div class="subbox">
+                            <label class="sublabel" for="munNacimiento">MUNICIPIO  </label>
+                            <input class="ipt2" type="text" name="munNacimiento" id="munNacimiento">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <label class="label">DIRECCIÓN DE CORRESPONDENCIA</label>
+                        <input class="ipt2" type="text" name="dirCorrespondencia" id="dirCorrespondencia">
+                        <div class="subbox">
+                            <label class="sublabel" for="paisCorrespondencia">PAÍS  <input class="ipt2" type="text" name="paisCorrespondencia" id="paisCorrespondencia"></label>
+                            <label class="sublabel" for="deptoCorrespondencia">DEPTO  <input class="ipt2" type="text" name="deptoCorrespondencia" id="deptoCorrespondencia"></label>
+                        </div>
+                        <div class="subbox">
+                            <label class="sublabel" for="munCorrespondencia">MUNICIPIO  <input class="ipt2" type="text" name="munCorrespondencia" id="munCorrespondencia"></label>
+                        </div>
+                        <div class="subbox">
+                            <label class="sublabel" for="telCorrespondencia">TELÉFONO  <input class="ipt2" type="text" name="telCorrespondencia" id="telCorrespondencia"></label>
+                            <label class="sublabel" for="emailCorrespondencia">EMAIL  <input class="ipt2" type="text" name="emailCorrespondencia" id="emailCorrespondencia"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divisorContenedores"><label class="labelSubtitulo">2</label><hr><label class="labelSubtitulo2">FORMACIÓN ACADÉMICA</label></div>
+        </main>
+    </div>
+</body>
+</html>
